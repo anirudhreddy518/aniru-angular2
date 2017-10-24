@@ -1,0 +1,34 @@
+<div id="main">
+    <select>
+        <option value="Destination"><a href=# >Destination</a></option>
+        <option value="Paths"><a href=# >Paths</a></option>
+        <option value="Keys"><a href=# >Keys</a></option>
+        <option value="CodeValues"><a href=# >Code Values</a></option>
+    </select><br><br><br>
+    <label>Code Table:</label>
+    <div>
+    <select [(ngModel)]="selected" (ngModelChange)="onSelect(Selected)">
+        <option *ngFor="let option of options" [value]="option"><a [routerLink]="['/selected']"></a>{{option}}</option></select>
+    </div>
+   <!-- <select>
+        <option value="HIE.DESTINATION_CODES "><a href=# >HIE.DESTINATION_CODES</a></option>
+        <option value="HIE.MESSAGE_STATUS_CODES"><a href=# >HIE.MESSAGE_STATUS_CODES</a></option>
+        <option value="HIE.SOURCE_MSG_SYSTEM_CODES"><a href=# >HIE.SOURCE_MSG_SYSTEM_CODES</a></option>
+        <option value="HIE.ROUTE_TYPE_CODES"><a href=# >HIE.ROUTE_TYPE_CODES</a></option>
+        <option value="HIE.PROCESSING_TYPE_CODES"><a href=# >HIE.PROCESSING_TYPE_CODES</a></option>
+        <option value="HIE.ORGANIZATION_TYPE_CODES"><a href=# >HIE.ORGANIZATION_TYPE_CODES</a></option>
+        <option value="HIE.ORGANIZATION_IDENTIFIERS"><a href=# >HIE.ORGANIZATION_IDENTIFIERS</a></option>
+        <option value="HIE.RACE_XREF"><a href=# >HIE.RACE_XREF</a></option>
+        <option value="HIE.ETHNICITY_XREF"><a href=# >HIE.ETHNICITY_XREF</a></option>
+        <option value="HIE.LANGUAGE_XREF"><a href=# >HIE.LANGUAGE_XREF</a></option>
+        <option value="HIE.RELIGION_XREF"><a href=# >HIE.RELIGION_XREF</a></option>
+    </select>-->
+    
+    <h3> Click on the row you want to edit or click on the add new button to add a row.</h3>
+    <button type="submit" onclick="">Add {{selected}} </button>
+</div>
+
+<div id="table" class="container-fluid">
+    <ng2-smart-table [settings]="tableSettings" [source]="data" (deleteConfirm)="onDeleteConfirm($event)"
+                  (editConfirm)="onSaveConfirm($event)"></ng2-smart-table>
+</div>

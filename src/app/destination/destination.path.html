@@ -1,0 +1,28 @@
+<div>
+    <select>
+        <option value="Destination"><a href=# >Destination</a></option>
+        <option value="Paths"><a href=# >Paths</a></option>
+        <option value="Keys"><a href=# >Keys</a></option>
+        <option value="CodeValues"><a href=# >Code Values</a></option>
+    </select>
+    <h3> click on the E button to edit the row, X button to remove the row, the V button to view the record, or click on the Add button to add a new record.</h3>
+    <button type="submit" onclick="">Add New Destination Configuration</button>
+</div>
+<!--<table datatable class="table row-border hover" *ngIf="this.temp_var">
+  <thead>
+    <tr>
+      <th>Destination</th>
+      <th>Route Type</th>
+      <th>Processing Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let rec of this.data">
+      <td>{{rec.userId}}</td>
+      <td>{{rec.title}}</td>
+      <td>{{rec.body}}</td>
+    </tr>
+  </tbody>
+</table>-->
+<ng2-smart-table [settings]="tableSettings" [source]="data" (deleteConfirm)="onDeleteConfirm($event)"></ng2-smart-table>
+  

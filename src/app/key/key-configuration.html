@@ -1,0 +1,21 @@
+<div id="main">
+    <select>
+        <option value="Destination"><a href=# >Destination</a></option>
+        <option value="Paths"><a href=# >Paths</a></option>
+        <option value="Keys"><a href=# >Keys</a></option>
+        <option value="CodeValues"><a href=# >Code Values</a></option>
+    </select><br><br>
+     <button type="submit" onclick="">Create New Key </button>
+    <h3> Click on the E button to edit the row, X button to remove the row, or click on the "Create New Key" button to add a row</h3>
+    <label >Destination</label>
+   <select>
+        <option value="HEALTHIX"><a href=# >HEALTHIX</a></option>
+        <option value="HIXNY"><a href=# >HIXNY</a></option>
+        <option value="BRONX"><a href=# >BRONX</a></option>
+        <option value="HealthlinkNY"><a href=# >HealthlinkNY</a></option>
+    </select>
+</div>
+<div id="table" class="container-fluid">
+    <ng2-smart-table [settings]="tableSettings" [source]="data" (deleteConfirm)="onDeleteConfirm($event)"
+                  (editConfirm)="onSaveConfirm($event)"></ng2-smart-table>
+</div>

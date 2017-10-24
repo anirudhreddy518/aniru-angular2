@@ -1,0 +1,26 @@
+[
+  {
+    "DestinationName": "BRONX RHIO",
+    "DestinationDescription": "this is the RHIO that covers the BRONX area"
+  },
+  {
+    "DestinationName": "HealtheConnections",
+    "DestinationDescription": "this is the RHIO that covers the BRONX area"
+  },
+  {
+    "DestinationName": "HEALTHeLINK",
+    "DestinationDescription": "this is the RHIO that covers the BRONX area"
+  },
+  {
+    "DestinationName": "Healthix",
+    "DestinationDescription": "this is the RHIO that covers the BRONX area"
+  },
+  {
+    "DestinationName": "healthlinkNY",
+    "DestinationDescription": "this is the RHIO that covers the BRONX area"
+  },
+  {
+    "DestinationName": "hixNY",
+    "DestinationDescription": "this is the RHIO that covers the BRONX area"
+  }
+]

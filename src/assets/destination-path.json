@@ -1,0 +1,17 @@
+[
+  {
+    "DestinationName": "HEALTHIX",
+    "RouteType": "UPHN Full",
+    "ProcessingType":"Production"
+  },
+  {
+    "DestinationName": "HEALTIX",
+    "RouteType": "UPHN Lite",
+    "ProcessingType":"Training"
+  },
+  {
+    "DestinationName": "HIXNY",
+    "RouteType": "Direct",
+    "ProcessingType":"Debug"
+  }
+]
